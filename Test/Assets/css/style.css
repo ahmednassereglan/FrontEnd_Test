@@ -29,8 +29,11 @@
     padding: 50px 0px;
   }
 
-  .containar{
-
+  footer{
+    background-color: var(--second-color);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
   }
 
 
@@ -240,6 +243,7 @@
     border-bottom-left-radius: var(--border_radius);
     border-bottom-right-radius: var(--border_radius);
     margin: 20px;
+    box-shadow: var(--shadow_settings);
    }
 
    .card__header{
