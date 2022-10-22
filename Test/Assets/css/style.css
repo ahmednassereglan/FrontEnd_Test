@@ -541,21 +541,21 @@
    }
 
    .card{
-    width: 230px;
-    height: 250px;
+    width: 200px;
+    height: 220px;
     padding: 40px 10px;
-    margin: 20px 20px;
+    margin: 20px calc(20px + 20px);
    }
    .card__body{
     position: absolute;
-    bottom: 18px;
+    bottom: 12px;
     right: 15px;
    }
    .body__title{
-    font-size: 18px;
+    font-size: 16px;
    }
    .body__text{
-    font-size: 13px;
+    font-size: 11px;
    }
     .body__skill{
         margin-top: 8px;
@@ -565,10 +565,10 @@
     }
     .skill__item i{
         color:#25c86b;
-        font-size: 13px;
+        font-size: 11px;
     }
     .skill__item span{
-        font-size: 14px;
+        font-size: 12px;
     }
 }
 
@@ -655,21 +655,21 @@
    }
 
    .card{
-    width: 250px;
-    height: 270px;
+    width: 240px;
+    height: 260px;
     padding: 40px 10px;
     margin: 20px 45px;
    }
    .card__body{
     position: absolute;
-    bottom: 18px;
+    bottom: 16px;
     right: 15px;
    }
    .body__title{
-    font-size: 20px;
+    font-size: 19px;
    }
    .body__text{
-    font-size: 14px;
+    font-size: 13px;
    }
     .body__skill{
         margin-top: 8px;
@@ -679,10 +679,10 @@
     }
     .skill__item i{
         color:#25c86b;
-        font-size: 13px;
+        font-size: 12px;
     }
     .skill__item span{
-        font-size: 14px;
+        font-size: 13px;
     }
 }
 
@@ -774,7 +774,118 @@
     width: 230px;
     height: 270px;
     padding: 40px 10px;
-    margin: 20px 80px;
+    margin: 20px calc(40% - 100px);
+   }
+   .card__body{
+    position: absolute;
+    bottom: 18px;
+    right: 15px;
+   }
+   .body__title{
+    font-size: 20px;
+   }
+   .body__text{
+    font-size: 14px;
+   }
+    .body__skill{
+        margin-top: 8px;
+    }
+    .skill__item{
+        margin: 3px 0px;
+    }
+    .skill__item i{
+        color:#25c86b;
+        font-size: 13px;
+    }
+    .skill__item span{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 950px) and (min-width: 768px) {
+  /************* Header Navbar ******************/
+  header{
+    padding: 25px 0px;
+  }
+  .nav__logo{
+    width: 50px;
+    padding: 5px 9px;
+  }
+  .nav__button{
+    padding: 4px 18px;
+    font-size: 19px;
+  }
+  /* Menu */
+  .nav__menu{
+    position: fixed;
+    top: 7.2rem;
+    right: -100%;
+    width: 40%;
+    height: 100%;
+    padding: 1rem 0.2rem;
+  }
+  .show{
+    right: 0;
+  }
+  .active::after{
+    top: 1.5rem;
+  }
+  .nav__list{
+      width: 50px !important;
+  }
+  .nav__item{
+      margin: 7px 0px;
+  }
+  .nav__link{
+    font-size: 15px;
+  }
+  .nav__toggle{
+    font-size: 1.2rem;
+    display: block;
+
+  }
+  /****************** Slide *******************/
+  .slide{
+    height: 340px;
+   }
+  .slide__title{
+    top: 80px;
+    right: 50px;
+    font-size: 23px;
+  }
+  .slide__subtitle{
+    top: 120px;
+    right: 65px;
+    font-size: 18px;
+  }
+  .slide__btn{
+    bottom: 150px;
+    right: 75px;
+    padding: 5px 20px;
+    font-size: 15px;
+  }
+  .sec__btn{
+    right: 230px;
+  }
+  /***************** Section ********************/
+  .section{
+    margin: 20px 5px
+   }
+   .section__title{
+    font-size: 19px;
+    margin-right: 20px;
+    margin-bottom: 18px;
+   }
+   .section__card{
+    display: grid;
+    grid-template-columns: auto auto ;
+   }
+
+   .card{
+    width: 230px;
+    height: 270px;
+    padding: 40px 10px;
+    margin: 20px calc(40% - 100px);
    }
    .card__body{
     position: absolute;
@@ -807,7 +918,7 @@
   *** Labtop ***
 **
 */
-@media screen and (max-width: 1024px) and (min-width: 768px){
+@media screen and (max-width: 1024px) and (min-width: 950px){
   /************* Header Navbar ******************/
   header{
     padding: 25px 0px;
@@ -815,10 +926,12 @@
   .nav__logo{
     width: 50px;
     padding: 5px 9px;
+    margin-right: 50px;
   }
   .nav__button{
     padding: 4px 18px;
     font-size: 19px;
+    margin-left: 50px;
   }
   /* Menu */
   /* .nav__menu{
@@ -933,10 +1046,12 @@
   .nav__logo{
     width: 50px;
     padding: 5px 9px;
+    margin-right: 50px;
   }
   .nav__button{
     padding: 4px 18px;
     font-size: 19px;
+    margin-left: 50px;
   }
   /* Menu */
   /* .nav__menu{
